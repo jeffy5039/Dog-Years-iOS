@@ -32,7 +32,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szh-vs-ZFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="301" y="282"/>
+            <point key="canvasLocation" x="288" y="282"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -99,8 +99,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="ConvertYearButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mZk-zX-tWd"/>
-                                    <action selector="convertToDogYearsButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gFG-MA-7vk"/>
+                                    <action selector="convertToDogYearsButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zkj-Sj-iTl"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwZ-o4-KDP">
@@ -113,7 +112,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="joy-Nv-tXd"/>
                     <connections>
-                        <outlet property="EnterDogYearTextField" destination="fwZ-o4-KDP" id="ycS-B9-W9c"/>
+                        <outlet property="EnterDogYearTextField" destination="XWO-qw-iu2" id="e3k-D6-OX2"/>
                         <outlet property="dogYearLabel" destination="scs-0Z-8S9" id="pNs-4W-pjS"/>
                         <outlet property="enterYourAgeTextView" destination="fwZ-o4-KDP" id="Y12-HH-ACJ"/>
                         <outlet property="yourYearLabel" destination="AO7-DY-O6Y" id="GBg-rV-1Oe"/>
@@ -121,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717" y="282"/>
+            <point key="canvasLocation" x="690" y="282"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I7l-lF-kee">
@@ -139,7 +138,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vod-Zs-Mvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-231" y="282"/>
+            <point key="canvasLocation" x="-121" y="282"/>
         </scene>
     </scenes>
     <resources>
