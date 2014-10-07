@@ -30,37 +30,40 @@ class ViewController: UIViewController {
     @IBAction func ConvertYearButton() {
         //convert string to double.
         var dogYears = (EnterDogYearTextField.text as NSString).doubleValue
+        var age: NSString
         
         //if-else for determining the calculation to use.
         if dogYears <= 2.0 {
-            dogYearLabel.text = "your dog is \(dogYears * 10.5) years old in human years"
+            dogYears = dogYears * 10.5
+            //NSString is used to format the Double
+            age = NSString(format: "&.1f", dogYears)
         } else {
-            var ageInHumanYears: Double = 2 * 10.5;
-            dogYears -= 2
-            //NSString to format the Double
-            var age = NSString(format: "%.1f", ageInHumanYears + dogYears * 4)
-            dogYearLabel.text = "your dog is \(age) years old in human years"
+            dogYears = 21 + (dogYears-2) * 4
+            age = NSString(format: "%.1f", dogYears)
         }
-
+        
+        dogYearLabel.text = "your dog is \(age) years old in human years"
         dogYearLabel.hidden = false
         EnterDogYearTextField.text = ""
+        EnterDogYearTextField.resignFirstResponder()
         
     }
     
     //human age conversion button.
     @IBAction func convertToDogYearsButton() {
         var personAge = (enterYourAgeTextView.text as NSString).doubleValue
+        var age: NSString
+        
         if personAge <= 21 {
-            var youngAge = NSString(format: "%.1f", personAge/10.5)
-            yourYearLabel.text = "you are \(youngAge) years old in dog years"
+            age = NSString(format: "%.1f", personAge/10.5)
         } else {
-            var ageInDogYears: Double = 2
-            personAge -= 21
-            var age = NSString(format: "%.1f", ageInDogYears + personAge/4)
-            yourYearLabel.text = "you are \(age) years old in dog years"
+            age = NSString(format: "%.1f", (2 + (personAge-21)/4))
         }
+        
+        yourYearLabel.text = "you are \(age) years old in dog years"
         yourYearLabel.hidden = false
         enterYourAgeTextView.text = ""
+        enterYourAgeTextView.resignFirstResponder()
     }
 }
 
